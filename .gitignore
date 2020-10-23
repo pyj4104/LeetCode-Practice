@@ -1,0 +1,8 @@
+*.*
+!*.py
+!*.cpp
+!*.txt
+!*.gitignore
+*/bin/*
+
+
