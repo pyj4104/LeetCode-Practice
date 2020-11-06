@@ -14,7 +14,7 @@ class Solution:
             if not name.lower() in namesChecked:
                 mergedList.append(name)
                 namesChecked.add(name.lower())
-        return list(mergedList)
+        return mergedList
 
 class HelperFunctions:
     def areListsSame(answer: [str], correctAnswer: [str]) -> bool:
