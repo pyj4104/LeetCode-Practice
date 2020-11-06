@@ -81,7 +81,7 @@ class TestSuites:
 		return runTimes
 
 	def __preprocessing__(self, tc):
-		if self.isLL is not None:
+		if self.isLL:
 			if self.numArg > 1:
 				tc[0] = LinkedList(tc[0]).head
 			else:

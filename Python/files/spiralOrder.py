@@ -34,3 +34,4 @@ class Solution:
 		else:
 			y -= 1
 		return x,y
+		

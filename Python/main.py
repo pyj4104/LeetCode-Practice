@@ -1,5 +1,5 @@
 from matplotlib import pyplot as plt
-from files.findCircleNum import Solution
+from files.longestValidParentheses import Solution
 from files.basicClasses.Helper import List, LinkedList, ListNode, TestSuites
 
 def graphRunTime():
@@ -36,9 +36,9 @@ def compFunctions():
 
 def test():
 	s = Solution()
-	testCases = [[[1,1,0],[1,1,1],[0,1,1]], [[1,1,0],[1,1,0],[0,0,1]], [[1,0,0,1],[0,1,1,0],[0,1,1,1],[1,0,1,1]]]
-	t = TestSuites(s, testCases, isLL = None, numArg = 1, retIndex = 1)
-	t.runTests('findCircleNum')
+	testCases = ["()", "()(()())", "(()))())("]
+	t = TestSuites(s, testCases, isLL = False, numArg = 1, retIndex = 0)
+	t.runTests('longestValidParentheses')
 
 if __name__=='__main__':
 	test()
