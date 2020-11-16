@@ -1,5 +1,5 @@
 from matplotlib import pyplot as plt
-from files.longestValidParentheses import Solution
+from files.search2 import Solution
 from files.basicClasses.Helper import List, LinkedList, ListNode, TestSuites
 
 def graphRunTime():
@@ -36,9 +36,9 @@ def compFunctions():
 
 def test():
 	s = Solution()
-	testCases = ["()", "()(()())", "(()))())("]
-	t = TestSuites(s, testCases, isLL = False, numArg = 1, retIndex = 0)
-	t.runTests('longestValidParentheses')
+	testCases = [[[2,5,6,0,0,1,2],0], [[2,5,6,0,0,1,2], 3], [[3,1], 3], [[2,2,2,0,2,2], 0]]
+	t = TestSuites(s, testCases, isLL = False, numArg = 2, retIndex = 0)
+	t.runTests('search')
 
 if __name__=='__main__':
 	test()
