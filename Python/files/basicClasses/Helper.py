@@ -25,11 +25,12 @@ class LinkedList:
 		print(retVal)
 
 class TestSuites:
-	def __init__(self, s, tcs, isLL = False, numArg = 1, retIndex = 0):
+	def __init__(self, s, tcs, isLL = False, numArg = 1, hasRetVal = True, retIndex = 0):
 		self.solution = s
 		self.tcs = tcs
 		self.isLL = isLL
 		self.numArg = numArg
+		self.hasRetVal = hasRetVal
 		self.retIndex = retIndex
 
 	def runTests(self, solName: str):
@@ -38,11 +39,11 @@ class TestSuites:
 			tc = self.__preprocessing__(tc)
 			if self.numArg > 1:
 				val = funcToTest(*tc)
-				if val is None:
+				if not self.hasRetVal:
 					val = tc[self.retIndex]
 			else:
 				val = funcToTest(*[tc])
-				if val is None:
+				if not self.hasRetVal:
 					val = tc
 			print(val)
 

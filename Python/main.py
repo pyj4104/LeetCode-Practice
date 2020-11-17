@@ -1,5 +1,5 @@
 from matplotlib import pyplot as plt
-from files.search2 import Solution
+from files.deleteDuplicates2 import Solution
 from files.basicClasses.Helper import List, LinkedList, ListNode, TestSuites
 
 def graphRunTime():
@@ -36,9 +36,9 @@ def compFunctions():
 
 def test():
 	s = Solution()
-	testCases = [[[2,5,6,0,0,1,2],0], [[2,5,6,0,0,1,2], 3], [[3,1], 3], [[2,2,2,0,2,2], 0]]
-	t = TestSuites(s, testCases, isLL = False, numArg = 2, retIndex = 0)
-	t.runTests('search')
+	testCases = [[1, 2, 2, 3, 4], [], [1], [1,1,2,3,3], [1,1,1,2,2,2,3,3,3], [1,2,3,3,4,4,5], [1,1,1,2,3]]
+	t = TestSuites(s, testCases, isLL = True, numArg = 1, hasRetVal = True, retIndex = 0)
+	t.runTests('deleteDuplicates')
 
 if __name__=='__main__':
 	test()
