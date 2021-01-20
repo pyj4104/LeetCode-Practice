@@ -1,7 +1,7 @@
-from matplotlib import pyplot as plt
-from files.deleteDuplicates2 import Solution
+#from matplotlib import pyplot as plt
+from files.findRepeatedDnaSequences import Solution
 from files.basicClasses.Helper import List, LinkedList, ListNode, TestSuites
-
+'''
 def graphRunTime():
 	s = Solution()
 	testCases = []
@@ -33,12 +33,12 @@ def compFunctions():
 	plt.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc='lower left',ncol=2, mode="expand", borderaxespad=0.)
 	plt.ylabel('in ms')
 	plt.show()
-
+'''
 def test():
 	s = Solution()
-	testCases = [[1, 2, 2, 3, 4], [], [1], [1,1,2,3,3], [1,1,1,2,2,2,3,3,3], [1,2,3,3,4,4,5], [1,1,1,2,3]]
-	t = TestSuites(s, testCases, isLL = True, numArg = 1, hasRetVal = True, retIndex = 0)
-	t.runTests('deleteDuplicates')
+	testCases = ['AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT']
+	t = TestSuites(s, testCases, isLL = False, numArg = 1, hasRetVal = True, retIndex = 0)
+	t.runTests('findRepeatedDnaSequences')
 
 if __name__=='__main__':
 	test()
