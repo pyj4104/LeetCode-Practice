@@ -1,5 +1,5 @@
 #from matplotlib import pyplot as plt
-from files.findRepeatedDnaSequences import Solution
+from files.findMinArrowShots import Solution
 from files.basicClasses.Helper import List, LinkedList, ListNode, TestSuites
 '''
 def graphRunTime():
@@ -36,9 +36,9 @@ def compFunctions():
 '''
 def test():
 	s = Solution()
-	testCases = ['AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT']
+	testCases = [[[2,3],[7,15],[5,12],[4,5],[8,13],[9,16],[5,8],[8,16],[3,4],[8,17]]]
 	t = TestSuites(s, testCases, isLL = False, numArg = 1, hasRetVal = True, retIndex = 0)
-	t.runTests('findRepeatedDnaSequences')
+	t.runTests('findMinArrowShots')
 
 if __name__=='__main__':
 	test()
