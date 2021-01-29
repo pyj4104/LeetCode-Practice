@@ -1,5 +1,5 @@
 #from matplotlib import pyplot as plt
-from files.findMinArrowShots import Solution
+from files.eatenApples import Solution
 from files.basicClasses.Helper import List, LinkedList, ListNode, TestSuites
 '''
 def graphRunTime():
@@ -36,12 +36,14 @@ def compFunctions():
 '''
 def test():
 	s = Solution()
-	testCases = [[[2,3],[7,15],[5,12],[4,5],[8,13],[9,16],[5,8],[8,16],[3,4],[8,17]]]
-	t = TestSuites(s, testCases, isLL = False, numArg = 1, hasRetVal = True, retIndex = 0)
-	t.runTests('findMinArrowShots')
+	testCases = [[[9,10,1,7,0,2,1,4,1,7,0,11,0,11,0,0,9,11,11,2,0,5,5], [3,19,1,14,0,4,1,8,2,7,0,13,0,13,0,0,2,2,13,1,0,3,7]]]
+	t = TestSuites(s, testCases, isLL = False, numArg = 2, hasRetVal = True, retIndex = 0)
+	t.runTests('eatenApples')
 
 if __name__=='__main__':
 	test()
 	#graphRunTime()
 	#compFunctions()
 	#testLL()
+
+

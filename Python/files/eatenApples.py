@@ -18,7 +18,6 @@ class Solution:
 			if thingsToEat[0] > dateToday and thingsToEat[1] > 0:
 				h.heappush(pQueue, thingsToEat)
 			dateToday += 1
-		print(dateToday, pQueue)
 		while pQueue:
 			thingsToEat = h.heappop(pQueue)
 			if thingsToEat[0] > dateToday and thingsToEat[1] > 0:
