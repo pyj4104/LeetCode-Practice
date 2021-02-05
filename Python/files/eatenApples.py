@@ -25,7 +25,6 @@ class Solution:
 				thingsToEat[1] -= 1
 			else:
 				continue
-			if thingsToEat[0] > dateToday and thingsToEat[1] > 0:
-				h.heappush(pQueue, thingsToEat)
+			h.heappush(pQueue, thingsToEat)
 			dateToday += 1
 		return numEaten

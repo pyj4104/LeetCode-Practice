@@ -1,5 +1,6 @@
 #from matplotlib import pyplot as plt
-from files.eatenApples import Solution
+from files.n0200_0299.n275hIndex import Solution
+#from Algorithms.reservoirSampling import Algorithm
 from files.basicClasses.Helper import List, LinkedList, ListNode, TestSuites
 '''
 def graphRunTime():
@@ -36,9 +37,9 @@ def compFunctions():
 '''
 def test():
 	s = Solution()
-	testCases = [[[9,10,1,7,0,2,1,4,1,7,0,11,0,11,0,0,9,11,11,2,0,5,5], [3,19,1,14,0,4,1,8,2,7,0,13,0,13,0,0,2,2,13,1,0,3,7]]]
-	t = TestSuites(s, testCases, isLL = False, numArg = 2, hasRetVal = True, retIndex = 0)
-	t.runTests('eatenApples')
+	testCases = [[0,1,3,5,6]]
+	t = TestSuites(s, testCases, isLL = False, numArg = 1, hasRetVal = True, retIndex = 0)
+	t.runTests('hIndex')
 
 if __name__=='__main__':
 	test()
