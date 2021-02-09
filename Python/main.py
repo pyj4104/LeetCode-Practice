@@ -1,8 +1,8 @@
 #from matplotlib import pyplot as plt
-from files.n0200_0299.n275hIndex import Solution
+from files.n1139largest1BorderedSquare import Solution
 #from Algorithms.reservoirSampling import Algorithm
 from files.basicClasses.Helper import List, LinkedList, ListNode, TestSuites
-'''
+
 def graphRunTime():
 	s = Solution()
 	testCases = []
@@ -34,17 +34,12 @@ def compFunctions():
 	plt.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc='lower left',ncol=2, mode="expand", borderaxespad=0.)
 	plt.ylabel('in ms')
 	plt.show()
-'''
+
 def test():
 	s = Solution()
-	testCases = [[0,1,3,5,6]]
+	testCases = [[[1,1,1],[1,0,1],[1,1,1]]]
 	t = TestSuites(s, testCases, isLL = False, numArg = 1, hasRetVal = True, retIndex = 0)
-	t.runTests('hIndex')
+	t.runTests('largest1BorderedSquare')
 
 if __name__=='__main__':
 	test()
-	#graphRunTime()
-	#compFunctions()
-	#testLL()
-
-
