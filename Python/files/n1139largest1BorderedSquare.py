@@ -10,7 +10,7 @@ class Solution:
 		if not seenOne:
 			return 0
 
-		distanceMat = [[(0,0)]] if grid[0][0] else None
+		distanceMat = [[(0,0)]] if grid[0][0] else [[None]]
 		# Fill out the first row
 		row = grid[0]
 
@@ -51,7 +51,7 @@ class Solution:
 							checkXVal = distanceMat[ny][j][0]
 							checkYVal = distanceMat[i][nx][1]
 							if checkXVal >= k and checkYVal >= k:
-								maxAreaForSquare = max(maxAreaForSquare, (k+1)**2)
+								maxAreaForSquare = (k+1)**2
 					maxArea = max(maxAreaForSquare, maxArea)
 		return maxArea
 
