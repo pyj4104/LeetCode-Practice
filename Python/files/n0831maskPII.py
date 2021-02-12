@@ -37,4 +37,3 @@ class Solution:
 			raise IllegalArgumentException("Check the phone number! Contact the developer if it's right.")
 
 		return result + regularizedNum[len(regularizedNum)-4:]
-
