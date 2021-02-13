@@ -1,5 +1,5 @@
 #from matplotlib import pyplot as plt
-from files.n0093RestoreIPAddresses import Solution
+from files.n1737minCharacters import Solution
 #from Algorithms.reservoirSampling import Algorithm
 from files.basicClasses.Helper import List, LinkedList, ListNode, TestSuites
 
@@ -37,9 +37,9 @@ def compFunctions():
 
 def test():
 	s = Solution()
-	testCases = ["25525511135", "0000", "1111", "010010", "101023"]
-	t = TestSuites(s, testCases, isLL = False, numArg = 1, hasRetVal = True, retIndex = 0)
-	t.runTests('restoreIpAddresses')
+	testCases = [["a", "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz"]]
+	t = TestSuites(s, testCases, isLL = False, numArg = 2, hasRetVal = True, retIndex = 0)
+	t.runTests('minCharacters')
 
 if __name__=='__main__':
 	test()
