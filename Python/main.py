@@ -1,5 +1,5 @@
 #from matplotlib import pyplot as plt
-from files.n1737minCharacters import Solution
+from files.n1657closeStrings import Solution
 #from Algorithms.reservoirSampling import Algorithm
 from files.basicClasses.Helper import List, LinkedList, ListNode, TestSuites
 
@@ -37,9 +37,9 @@ def compFunctions():
 
 def test():
 	s = Solution()
-	testCases = [["a", "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz"]]
+	testCases = [["abbzzca","babzzcz"]]
 	t = TestSuites(s, testCases, isLL = False, numArg = 2, hasRetVal = True, retIndex = 0)
-	t.runTests('minCharacters')
+	t.runTests('closeStrings')
 
 if __name__=='__main__':
 	test()
